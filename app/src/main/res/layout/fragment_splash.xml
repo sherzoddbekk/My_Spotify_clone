@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <ImageView
-            android:src="@drawable/img"
+            android:src="@drawable/icon_sun_bottom"
             android:layout_width="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
         <ImageView
-            android:src="@drawable/img_1"
+            android:src="@drawable/icon_sun_top"
             android:scaleType="fitXY"
             android:adjustViewBounds="true"
             android:layout_width="match_parent"
