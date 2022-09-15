@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/activity_main.xml" value="0.178125" />
         <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/flow_fragment_auth.xml" value="0.178125" />
-        <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/flow_fragment_main.xml" value="0.18229166666666666" />
+        <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/flow_fragment_main.xml" value="0.13705583756345177" />
+        <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/fragment_home.xml" value="0.18229166666666666" />
         <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/fragment_login.xml" value="0.18229166666666666" />
+        <entry key="..\:/Android Development/AndroidStudioProjects/SpotifyClone/app/src/main/res/layout/fragment_your_library.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_gradient_splash.xml" value="0.2395" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_splash.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/menu/menu.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>
