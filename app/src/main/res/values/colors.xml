@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="click_color_write">#1ED760</color>
+    <color name="plus_color">#333333</color>
 </resources>
