@@ -10,4 +10,5 @@
     <color name="click_color_write">#1ED760</color>
     <color name="green_color">#1ED760</color>
     <color name="black_color">#111111</color>
+    <color name="plus_color">#333333</color>
 </resources>
