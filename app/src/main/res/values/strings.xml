@@ -2,9 +2,11 @@
     <string name="app_name">My Spotify clone</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="voice_assistants_apps"><![CDATA[Voice Assistants & Apps]]></string>
     <string name="str_your_library">Your library</string>
     <string name="str_playlists">playlists</string>
     <string name="str_12">12</string>
     <string name="str_new_playlist">New playlist</string>
     <string name="str_recently_played">Recently played</string>
+    <string name="liked_playlists">Liked playlists</string>
 </resources>
