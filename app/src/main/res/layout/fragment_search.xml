@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".fragment.main.SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
+        android:id="@+id/fl"
+        android:background="#151929"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_toplayout"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-213dp" />
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <SearchView
+               android:id="@+id/idSV"
+               android:background="@drawable/search_borders"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="8dp"
+               android:iconifiedByDefault="false"
+               android:padding="4dp"
+               android:queryHint="Search Music or Artist"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/idLVProgrammingLanguages"
+               android:layout_width="match_parent"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               tools:listitem="@layout/item_search_music_lists"
+               android:layout_marginTop="10dp"
+               android:layout_height="fill_parent"/>
+
+       </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
