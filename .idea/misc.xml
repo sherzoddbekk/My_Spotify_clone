@@ -12,6 +12,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_white_radius.xml" value="0.2415" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/gradient_for_profile.xml" value="0.116" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/flow_fragment_auth.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/flow_fragment_main.xml" value="0.17222222222222222" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_home.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_liked.xml" value="0.264" />
@@ -22,6 +23,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_search.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_splash.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_your_library.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_liked_playlist.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_liked_songs.xml" value="0.4" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_profile_for_playlist.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_your_library.xml" value="0.23645833333333333" />
@@ -38,7 +40,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.10400000000000001" />
+        <option name="scale" value="0.264" />
       </ProjectState>
     </option>
   </component>
