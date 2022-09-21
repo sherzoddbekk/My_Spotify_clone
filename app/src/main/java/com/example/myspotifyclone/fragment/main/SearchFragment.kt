@@ -1,16 +1,15 @@
 package com.example.myspotifyclone.fragment.main
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.SearchView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myspotifyclone.R
+import com.example.myspotifyclone.adapters.CourseRVAdapter
+import com.example.myspotifyclone.models.CourseRVModal
+import java.util.Locale.filter
 
 class SearchFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -19,6 +18,15 @@ class SearchFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+//        setContentView(R.layout.fragment_search)
+//
+//        // initializing our variables.
+//        courseRV = findViewById(R.id.idRVCourses)
+//
+//        // calling method to
+//        // build recycler view.
+//        buildRecyclerView()
 
     }
 
@@ -36,80 +44,92 @@ class SearchFragment : Fragment() {
     }
 
     private fun searchView(){
-        class MainActivity : AppCompatActivity() {
-            // on below line we are
-            // creating variables for listview
-            lateinit var programmingLanguagesLV: ListView
 
-            // creating array adapter for listview
-            lateinit var listAdapter: ArrayAdapter<String>
+        lateinit var courseRV: RecyclerView
+        lateinit var courseRVAdapter: CourseRVAdapter
+        lateinit var courseList: ArrayList<CourseRVModal>
 
-            // creating array list for listview
-            lateinit var programmingLanguagesList: ArrayList<String>;
+        fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
 
-            // creating variable for searchview
-            lateinit var searchView: SearchView
 
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                setContentView(R.layout.activity_main)
+            // on below line we are initializing our list
+            courseList = ArrayList()
 
-                // initializing variables of list view with their ids.
-                programmingLanguagesLV = findViewById(R.id.idLVProgrammingLanguages)
-                searchView = findViewById(R.id.idSV)
+            // on below line we are initializing our adapter
+            courseRVAdapter = CourseRVAdapter(courseList)
 
-                // initializing list and adding data to list
-                programmingLanguagesList = ArrayList()
-                programmingLanguagesList.add("C")
-                programmingLanguagesList.add("C#")
-                programmingLanguagesList.add("Java")
-                programmingLanguagesList.add("Javascript")
-                programmingLanguagesList.add("Python")
-                programmingLanguagesList.add("Dart")
-                programmingLanguagesList.add("Kotlin")
-                programmingLanguagesList.add("Typescript")
+            // on below line we are setting adapter to our recycler view.
+            courseRV.adapter = courseRVAdapter
 
-                // initializing list adapter and setting layout
-                // for each list view item and adding array list to it.
-                listAdapter = ArrayAdapter<String>(
-                    this,
-                    android.R.layout.simple_list_item_1,
-                    programmingLanguagesList
-                )
+            // on below line we are adding data to our list
+            courseList.add(CourseRVModal("Android Development", R.drawable.icon_spotify))
+            courseList.add(CourseRVModal("C++ Development", R.drawable.icon_spotify))
+            courseList.add(CourseRVModal("Java Development", R.drawable.icon_spotify))
+            courseList.add(CourseRVModal("Python Development", R.drawable.icon_spotify))
+            courseList.add(CourseRVModal("JavaScript Development", R.drawable.icon_spotify))
 
-                // on below line setting list
-                // adapter to our list view.
-                programmingLanguagesLV.adapter = listAdapter
+            // on below line we are notifying adapter
+            // that data has been updated.
+            courseRVAdapter.notifyDataSetChanged()
 
-                // on below line we are adding on query
-                // listener for our search view.
-                searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-                    override fun onQueryTextSubmit(query: String?): Boolean {
-                        // on below line we are checking
-                        // if query exist or not.
-                        if (programmingLanguagesList.contains(query)) {
-                            // if query exist within list we
-                            // are filtering our list adapter.
-                            listAdapter.filter.filter(query)
-                        } else {
-                            // if query is not present we are displaying
-                            // a toast message as no  data found..
-                            Toast.makeText(this@MainActivity, "No Language found..", Toast.LENGTH_LONG)
-                                .show()
-                        }
-                        return false
-                    }
+        }
 
-                    override fun onQueryTextChange(newText: String?): Boolean {
-                        // if query text is change in that case we
-                        // are filtering our adapter with
-                        // new text on below line.
-                        listAdapter.filter.filter(newText)
-                        return false
-                    }
-                })
+        // calling on create option menu
+        // layout to inflate our menu file.
+        fun onCreateOptionsMenu(menu: Menu): Boolean {
+            // below line is to get our inflater
+            val inflater = requireActivity().menuInflater
+
+            // inside inflater we are inflating our menu file.
+            inflater.inflate(R.menu.search_menu, menu)
+
+            // below line is to get our menu item.
+            val searchItem: MenuItem = menu.findItem(R.id.actionSearch)
+
+            // getting search view of our item.
+            val searchView: SearchView = searchItem.getActionView() as SearchView
+
+            // below line is to call set on query text listener method.
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(p0: String?): Boolean {
+                    return false
+                }
+
+                override fun onQueryTextChange(msg: String): Boolean {
+                    // inside on query text change method we are
+                    // calling a method to filter our recycler view.
+                    //filter(msg)
+                    return false
+                }
+            })
+            return true
+        }
+
+        fun filter(text: String) {
+            // creating a new array list to filter our data.
+            val filteredlist: ArrayList<CourseRVModal> = ArrayList()
+
+            // running a for loop to compare elements.
+            for (item in courseList) {
+                // checking if the entered string matched with any item of our recycler view.
+                if (item.courseName.toLowerCase().contains(text.toLowerCase())) {
+                    // if the item is matched we are
+                    // adding it to our filtered list.
+                    filteredlist.add(item)
+                }
+            }
+            if (filteredlist.isEmpty()) {
+                // if no item is added in filtered list we are
+                // displaying a toast message as no data found.
+                Toast.makeText(context, "No Data Found..", Toast.LENGTH_SHORT).show()
+            } else {
+                // at last we are passing that filtered
+                // list to our adapter class.
+                courseRVAdapter.filterList(filteredlist)
             }
         }
+
     }
 
 }
