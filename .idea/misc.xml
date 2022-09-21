@@ -6,6 +6,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_circle_black.xml" value="0.1455" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_circle_green.xml" value="0.1455" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_gradient_splash.xml" value="0.2395" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_radius_e.xml" value="0.163" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_radius_light_black.xml" value="0.1455" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_radius_light_green.xml" value="0.1455" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/drawable/bg_white_radius.xml" value="0.2415" />
@@ -13,13 +14,17 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/flow_fragment_main.xml" value="0.17222222222222222" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_home.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_liked.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_liked.xml" value="0.264" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_playing_song.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_profile.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_profile_person.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_search.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_splash.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/fragment_your_library.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_liked_songs.xml" value="0.4" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_profile_for_playlist.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/layout/item_your_library.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MySpotifyclone/app/src/main/res/menu/menu.xml" value="0.23645833333333333" />
       </map>
     </option>
@@ -33,7 +38,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.2" />
+        <option name="scale" value="0.10400000000000001" />
       </ProjectState>
     </option>
   </component>
