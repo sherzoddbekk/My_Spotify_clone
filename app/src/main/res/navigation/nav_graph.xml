@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/searchFragment">
+    app:startDestination="@id/your_library_fragment">
 
     <action
         android:id="@+id/action_global_loginFlowFragment"
@@ -48,5 +48,11 @@
         android:name="com.example.myspotifyclone.fragment.main.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/your_library_fragment"
+        android:name="com.example.myspotifyclone.fragment.main.YourLibraryFragment"
+        android:label="fragment_your_library"
+        tools:layout="@layout/fragment_your_library" />
 
 </navigation>

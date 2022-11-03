@@ -20,6 +20,11 @@ class YourLibraryFragment : Fragment() {
 
     private val yourLibraryAdapter by lazy { YourLibraryAdapter() }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
